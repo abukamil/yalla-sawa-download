@@ -622,3 +622,13 @@ p {
     transition: none;
   }
 }
+
+.install-note {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--driver-surface);
+  border: 1px solid var(--driver-border);
+  font-size: 0.92rem;
+  color: var(--text-2);
+}
