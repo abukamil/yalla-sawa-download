@@ -330,6 +330,10 @@ p {
   background: var(--canvas);
 }
 
+.video-subtitle {
+  margin-top: 56px;
+}
+
 .video-frame {
   position: relative;
   margin-top: 32px;
