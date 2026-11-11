@@ -11,6 +11,10 @@
 </head>
 <body style="font-family: system-ui, sans-serif; text-align: center; padding: 48px 16px;">
   <p>موقع يلا سوا صار على <a href="https://yallasawa.app/">yallasawa.app</a></p>
-  <script>location.replace("https://yallasawa.app/");</script>
+  <script>
+    // www.yallasawa.app is served from here: keep the path when sending visitors to the bare domain.
+    var p = location.hostname === "www.yallasawa.app" ? location.pathname + location.search + location.hash : "/";
+    location.replace("https://yallasawa.app" + p);
+  </script>
 </body>
 </html>
